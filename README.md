@@ -10,11 +10,15 @@ TRAV - BUD is a data analytics web app that helps the client to solve their quer
 
 ## FUNCTIONAL REQUIREMENTS -
 
-### Lauch Year Prediction of the Vehicle
-
 ### Forecast of the Car Price
+![image](https://user-images.githubusercontent.com/76087547/170762209-a28edb1f-9b3f-433a-8924-ddea865569e9.png)
 
 ### Carbon Emission Predictor
 
+### Lauch Year Prediction of the Vehicle
+
+
 ### Timeline
+![image](https://user-images.githubusercontent.com/76087547/170762530-98501af2-74cc-4b08-9237-8df61000d726.png)
+
 
