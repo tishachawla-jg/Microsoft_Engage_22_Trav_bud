@@ -14,9 +14,10 @@ TRAV - BUD is a data analytics web app that helps the client to solve their quer
 ![image](https://user-images.githubusercontent.com/76087547/170762209-a28edb1f-9b3f-433a-8924-ddea865569e9.png)
 
 ### Carbon Emission Predictor
+![image](https://user-images.githubusercontent.com/76087547/170767614-4e08d9cd-7b7b-4eb0-8fba-188af5a74d97.png)
 
 ### Lauch Year Prediction of the Vehicle
-
+![image](https://user-images.githubusercontent.com/76087547/170767716-7cfaf1e7-1aa3-4fc6-8442-ff1ac5e1d882.png)
 
 ### Timeline
 ![image](https://user-images.githubusercontent.com/76087547/170762530-98501af2-74cc-4b08-9237-8df61000d726.png)
