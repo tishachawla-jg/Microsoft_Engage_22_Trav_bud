@@ -1,6 +1,6 @@
-# TRAV - BUD
+# TRAV - BUD :oncoming_automobile:
 
-TRAV - BUD is a data analytics web app that helps the client to solve their queries with the power of automobile data.
+TRAV - BUD is a data analytics web  :oncoming_automobile:app that helps the client to solve their queries with the power of automobile data.
 
 ## FLOWCHART
 ![image](https://user-images.githubusercontent.com/76087547/170761013-a6a9e1ec-6c77-4760-8725-d781fe6839b9.png)
