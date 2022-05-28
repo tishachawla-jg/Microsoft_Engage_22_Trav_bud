@@ -1,6 +1,6 @@
 # TRAV-BUD :oncoming_automobile:
 
-TRAV - BUD is a data analytics web app that helps the client to solve their queries with the power of automobile data. Using TRAV-BUD Automotive Industry could harness data to take informed decisions.
+TRAV-BUD is a data analytics web app that helps the client to solve their queries with the power of automobile data. Using TRAV-BUD Automotive Industry could harness data to take informed decisions.
 
 
 # Why is there need of TRAV-BUD ?
@@ -19,7 +19,12 @@ TRAV - BUD is a data analytics web app that helps the client to solve their quer
 ## FLOWCHART
 ![image](https://user-images.githubusercontent.com/76087547/170761013-a6a9e1ec-6c77-4760-8725-d781fe6839b9.png) 
 
+# FEATURES AND INTERFACES :desktop_computer:
+
 ## LANDING PAGE
+
+- Seamless landing page with navigation bar, features and services, and footer.
+
 ![image](https://user-images.githubusercontent.com/76087547/170760305-276e6d7f-6ab1-49c9-81c8-75112641a786.png)
 
 ## Forecast of the Car Price
