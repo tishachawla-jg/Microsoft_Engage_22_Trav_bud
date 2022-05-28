@@ -3,13 +3,13 @@
 TRAV-BUD is a data analytics web app that helps the client to solve their queries with the power of automobile data. Using TRAV-BUD Automotive Industry could harness data to take informed decisions.
 
 
-# Why is there need of TRAV-BUD ?
+## Why is there need of TRAV-BUD ?
 
 - For automobiles, data may be quite useful in making informed business decisions. Hyundai, for example, has been investing in Big Data since 2012, and they are considered one of the forerunners in understanding its potential and implementing it before anyone else.
 - Data will be a crucial enabler as new goods and marketplaces become more competitive, allowing automotive firms to make educated decisions on everything from product portfolios and technology adoption to pricing, target market selection, and supply chain planning.
 
 
-# Functional Requirements -
+## Functional Requirements -
 - Car Price Predictor
 - Carbon Emission Predictor
 - Car Launch Year Predictor
