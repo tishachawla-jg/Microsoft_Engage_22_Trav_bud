@@ -17,7 +17,8 @@ TRAV - BUD is a data analytics web app that helps the client to solve their quer
 
 
 ## FLOWCHART
-![image](https://user-images.githubusercontent.com/76087547/170761013-a6a9e1ec-6c77-4760-8725-d781fe6839b9.png)
+![image](https://user-images.githubusercontent.com/76087547/170761013-a6a9e1ec-6c77-4760-8725-d781fe6839b9.png) ![image](https://user-images.githubusercontent.com/76087547/170816942-38fb3efb-c1ed-41e2-aa65-4b03d67053fb.png)
+
 
 ## LANDING PAGE
 ![image](https://user-images.githubusercontent.com/76087547/170760305-276e6d7f-6ab1-49c9-81c8-75112641a786.png)
