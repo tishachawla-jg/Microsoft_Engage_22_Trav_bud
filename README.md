@@ -5,8 +5,8 @@ TRAV - BUD is a data analytics web app that helps the client to solve their quer
 
 # WHY NEED OF TRAV-BUD ?
 
-For automobiles, data may be quite useful in making informed business decisions. Hyundai, for example, has been investing in Big Data since 2012, and they are considered one of the forerunners in understanding its potential and implementing it before anyone else.
-Data will be a crucial enabler as new goods and marketplaces become more competitive, allowing automotive firms to make educated decisions on everything from product portfolios and technology adoption to pricing, target market selection, and supply chain planning.
+- For automobiles, data may be quite useful in making informed business decisions. Hyundai, for example, has been investing in Big Data since 2012, and they are considered one of the forerunners in understanding its potential and implementing it before anyone else.
+- Data will be a crucial enabler as new goods and marketplaces become more competitive, allowing automotive firms to make educated decisions on everything from product portfolios and technology adoption to pricing, target market selection, and supply chain planning.
 
 
 # FUNCTIONAL REQUIREMENTS -
