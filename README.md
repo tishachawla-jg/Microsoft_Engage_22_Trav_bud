@@ -1,6 +1,6 @@
 # TRAV - BUD :oncoming_automobile:
 
-TRAV - BUD is a data analytics web  :oncoming_automobile:app that helps the client to solve their queries with the power of automobile data. Using TRAV-BUD Automotive Industry could harness data to take informed decisions.
+TRAV - BUD is a data analytics web app that helps the client to solve their queries with the power of automobile data. Using TRAV-BUD Automotive Industry could harness data to take informed decisions.
 
 
 # WHY NEED OF TRAV-BUD ?
@@ -34,8 +34,18 @@ Data will be a crucial enabler as new goods and marketplaces become more competi
 ![image](https://user-images.githubusercontent.com/76087547/170767716-7cfaf1e7-1aa3-4fc6-8442-ff1ac5e1d882.png)
 
 ### Km Driven Predictor
+![image](https://user-images.githubusercontent.com/76087547/170816529-573ee080-a41b-48a4-95ce-cdf7ffe5804f.png)
 
 ### Timeline
 ![image](https://user-images.githubusercontent.com/76087547/170762530-98501af2-74cc-4b08-9237-8df61000d726.png)
+
+## TECH STACK
+
+# Need help?
+Feel free to contact me on [LinkedIn](https://www.linkedin.com/in/tisha-chawla-a944031a3/)
+
+if (youEnjoyed) {
+    starThisRepository();
+}
 
 
