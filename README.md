@@ -57,7 +57,7 @@ TRAV-BUD is a data analytics web app that helps the client to solve their querie
 ### Timeline
 
 - Different challenges that I faced all through these 4 weeks, how I overcame them and what I learnt from those mistakes.
-- 
+
 ![image](https://user-images.githubusercontent.com/76087547/170762530-98501af2-74cc-4b08-9237-8df61000d726.png)
 
 ## TECH STACK
