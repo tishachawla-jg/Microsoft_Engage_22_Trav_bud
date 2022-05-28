@@ -98,9 +98,11 @@ def predict3():
 def predict4():
     company=request.form.get('company')
     car_model=request.form.get('car_models')
+    year=request.form.get('year')
     fuel_type=request.form.get('fuel_type')
-    prediction=model4.predict(pd.DataFrame(columns=['name', 'company',  'fuel_type'],
-                              data=np.array([car_model,company,fuel_type]).reshape(1, 3)))
+    Price=request.form.get('Price')
+    prediction=model4.predict(pd.DataFrame(columns=['name', 'company',  'fuel_type', 'year', 'Price'],
+                              data=np.array([car_model,company,fuel_type, year,Price ]).reshape(1, 5)))
     print(prediction)
     return str(np.round(prediction[0]))
 
