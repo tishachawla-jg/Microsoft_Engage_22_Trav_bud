@@ -1,6 +1,20 @@
 # TRAV - BUD :oncoming_automobile:
 
-TRAV - BUD is a data analytics web  :oncoming_automobile:app that helps the client to solve their queries with the power of automobile data.
+TRAV - BUD is a data analytics web  :oncoming_automobile:app that helps the client to solve their queries with the power of automobile data. Using TRAV-BUD Automotive Industry could harness data to take informed decisions.
+
+
+# WHY NEED OF TRAV-BUD ?
+
+For automobiles, data may be quite useful in making informed business decisions. Hyundai, for example, has been investing in Big Data since 2012, and they are considered one of the forerunners in understanding its potential and implementing it before anyone else.
+Data will be a crucial enabler as new goods and marketplaces become more competitive, allowing automotive firms to make educated decisions on everything from product portfolios and technology adoption to pricing, target market selection, and supply chain planning.
+
+
+# FUNCTIONAL REQUIREMENTS -
+- Car Price Predictor
+- Carbon Emission Predictor
+- Car Launch Year Predictor
+- Km Driven Predictor
+
 
 ## FLOWCHART
 ![image](https://user-images.githubusercontent.com/76087547/170761013-a6a9e1ec-6c77-4760-8725-d781fe6839b9.png)
@@ -18,6 +32,8 @@ TRAV - BUD is a data analytics web  :oncoming_automobile:app that helps the clie
 
 ### Lauch Year Prediction of the Vehicle
 ![image](https://user-images.githubusercontent.com/76087547/170767716-7cfaf1e7-1aa3-4fc6-8442-ff1ac5e1d882.png)
+
+### Km Driven Predictor
 
 ### Timeline
 ![image](https://user-images.githubusercontent.com/76087547/170762530-98501af2-74cc-4b08-9237-8df61000d726.png)
