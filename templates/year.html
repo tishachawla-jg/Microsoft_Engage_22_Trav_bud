@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head xmlns="http://www.w3.org/1999/xhtml">
+    <meta charset="UTF-8">
+    <title>Car Price Predictor</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+
+</head>
+<style>
+    html,body{
+        background-image: url('/static/images/year.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: relative;
+        }
+        .card{
+        height: 370px;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 400px;
+        background-color: rgba(0,0,0,0.7) !important;
+        }
+        .login_btn{
+        color: black;
+        background-color: #FFC312;
+        width: 100px;
+        }       
+        .login_btn:hover{
+        color: black;
+        background-color: white;
+        }
+
+</style>
+
+<body class="bg mt-3" >
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent"   >
+    <a class="navbar-brand text-white" href="#">
+  
+        <a  href="/" > <b><span style="color: #f4623a">TRAV -</span> <span style="color: gray">BUD</span></b> </a></a>
+      
+      
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+<div class="container mt-5" >
+    <div class="row align-items-center mt-5">
+        <div class="card mt-5 bg-dark text-white " style="width: 100%; height: 100%;">
+            <div class="card-header text-dark" style="text-align: center;">
+            
+            <h2><b><span style="color: #ffe135"> Welcome To</span>
+            
+            <span style="color: white">Car Launch Predictor</span></b> </h2>
+               
+                <p style="color: gray">This app predicts the year of launch of a car. Try filling the details below: </p>
+            </div>
+               
+                <div class="row mt-2 ">
+                <div class="col-2 ">
+                 
+                </div>
+                <div class="col-8 " >
+                <form method="post" accept-charset="utf-8" name="Modelform" >
+                    <div class="col form-group" >
+                        
+                        <select class="selectpicker form-control text-white" id="company" name="company" required="1" style="background:#585858;  border:none" >
+                            {% for company in companies %}
+                            <option value="{{ company }}">{{ company }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="col form-group">
+                       
+                        <select class="selectpicker form-control text-white" id="car_models" name="car_models" required="1" style="background:#585858;  border:none">
+                          {% for car_model in car_models %}
+                          <option value="{{ car_model }}">{{ car_model}}</option>
+                          {% endfor %}
+                        </select>
+                    </div>
+                    <div class="col form-group" >
+                     
+                        <select class="selectpicker form-control text-white" id="fuel_type" name="fuel_type" required="1"  style="background:#585858;  border:none">
+                            {% for fuel in fuel_types %}
+                            <option value="{{ fuel }}">{{ fuel }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="col form-group mt-4 mb-3" style="text-align: center">
+                        <button  class="btn btn-warning" onclick="send_data()">Predict Year</button>
+                    </div>
+                </form>
+                
+                <div class="col-2 ">
+                 
+                </div>
+                <div class="row mb-5">
+                    <div class="col-12" style="text-align: center">
+                        <h4><span id="prediction"></span></h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function load_car_models(company_id,car_model_id)
+    {
+        var company=document.getElementById(company_id);
+        var car_model= document.getElementById(car_model_id);
+        console.log(company.value);
+        car_model.value="";
+        car_model.innerHTML="";
+        {% for company in companies %}
+            if( company.value == "{{ company }}")
+            {
+                {% for model in car_models %}
+                    {% if company in model %}
+
+                        var newOption= document.createElement("option");
+                        newOption.value="{{ model }}";
+                        newOption.innerHTML="{{ model }}";
+                        car_model.options.add(newOption);
+                    {% endif %}
+                {% endfor %}
+            }
+        {% endfor %}
+    }
+
+
+    function form_handler(event) {
+        event.preventDefault(); // Don't submit the form normally
+    }
+    function send_data()
+    {
+        document.querySelector('form').addEventListener("submit",form_handler);
+
+        var fd=new FormData(document.querySelector('form'));
+
+        var xhr= new XMLHttpRequest({mozSystem: true});
+
+        xhr.open('POST','/predict3',true);
+        document.getElementById('prediction').innerHTML="Wait! Predicting Year of Launch.....";
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState == XMLHttpRequest.DONE){
+                document.getElementById('prediction').innerHTML="Prediction: "+xhr.responseText;
+
+            }
+        };
+
+        xhr.onload= function(){};
+
+        xhr.send(fd);
+    }
+</script>
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+</html>

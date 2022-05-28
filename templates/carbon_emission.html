@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head xmlns="http://www.w3.org/1999/xhtml">
+    <meta charset="UTF-8">
+    <title>CO2 Emission Predictor</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+
+</head>
+<style>
+    html,body{
+      
+        background-image: url('/static/images/carbon_e.jpg');
+        background-repeat: no-repeat;
+        background-position: 50% 70%;
+        background-size: cover;
+        }
+        .card{
+        height: 430px;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 400px;
+        background-color: rgba(0,0,0,0.8) !important;
+        }
+        .login_btn{
+        color: black;
+        background-color: #FFC312;
+        width: 100px;
+         }
+                
+        .login_btn:hover{
+        color: black;
+        background-color: white;
+        }
+            ::placeholder {
+        
+              /* Firefox, Chrome, Opera */
+              color: 	#C0C0C0;
+          }
+            
+          :-ms-input-placeholder {
+              
+              /* Internet Explorer 10-11 */
+              color: red;
+          }
+            
+          ::-ms-input-placeholder {
+              
+              /* Microsoft Edge */
+              color: orange;
+          }
+              
+</style>
+
+<body class="bg mt-2" >
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent"   >
+    <a class="navbar-brand text-white" href="#">
+  
+      <a  href="/" > <b><span style="color: #f4623a">TRAV -</span> <span style="color: gray">BUD</span></b> </a></a>
+      
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+<div class="container mt-5" >
+    <div class="row align-items-center mt-5   ">
+        <div class="card mt-5 bg-dark text-white " style="width: 100%; height: 100%;">
+            <div class="card-header text-dark" style="text-align: center;">
+            
+            <h2><b><span style="color: #ffe135">  Welcome To</span>
+            
+            <span style="color: white">CO2 Emission Predictor</span></b> </h2>
+               
+                <p style="color: gray">This app predicts the CO2 emission by vehicles. Try filling the details below: </p>
+            </div>
+            
+               
+               
+                 
+            <div class="row ">
+                 <div class="col-2 ">
+              </div>
+              <div class="col-8 " >
+            <div class="container">
+              <div class="row">
+                <div class="card-body">
+                <form method="post" accept-charset="utf-8" action="{{ url_for('predict2')}}"method="post">
+                    
+                    <div class="col-md-10 form-group" >
+                        <input type="text" name="enginesize" placeholder="Engine Size" required="required" style="background:#585858; border:none" size = "90"/>
+                    </div>
+
+                    <div class="col-md-10 form-group" >
+                        <input type="text" name="cylinders" placeholder="Cylinders" required="required" style="background:#585858; border:none"  size = "90" />
+                    </div>
+
+                    <div class="col-md-10 form-group" >
+                        <input type="text" name="fuel" placeholder="Fuel Capacity" required="required" style="background:#585858; border:none"  size = "90" />
+                    </div>
+
+
+                    <div class="col form-group mt-5 mb-2" style="text-align: center">
+                        <button  class="btn btn-warning">Predict</button>
+                        
+                    </div>
+                </form>
+                <div class="col form-group mt-2" style="text-align: center">
+                  {{ prediction_text }}  
+                  
+              </div>
+                
+              </div>
+            </div>
+            </div> 
+                <br>
+                <br>
+                
+                
+
+
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+</html>
