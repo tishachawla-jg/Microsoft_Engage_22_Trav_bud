@@ -65,7 +65,7 @@ TRAV-BUD is a data analytics web app that helps the client to solve their querie
 ![image](https://user-images.githubusercontent.com/76087547/170817526-a65ecc73-2f49-4bc3-b1e0-1d8372421b17.png)
 
 - HTML/CSS/JS/BOOTSTRAP : Frontend Development and Styling
-- Python :Building Machine Learning Model
+- Python: Building Machine Learning Model
 - Flask : Machine Learning Web App Integration
 - Heroku : Deployment
 
