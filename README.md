@@ -69,7 +69,7 @@ TRAV-BUD is a data analytics web app that helps the client to solve their querie
 - Flask : Machine Learning Web App Integration
 - Heroku : Deployment
 
-# Need help?
+## Need help?
 Feel free to contact me on [LinkedIn](https://www.linkedin.com/in/tisha-chawla-a944031a3/)
 
 
