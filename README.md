@@ -17,6 +17,9 @@ TRAV-BUD is a data analytics web app that helps the client to solve their querie
 
 
 ## FLOWCHART
+
+- This flowchart highlights the steps from data preprocessing, cleaning, model building, training and testing to integration and deployment.
+
 ![image](https://user-images.githubusercontent.com/76087547/170761013-a6a9e1ec-6c77-4760-8725-d781fe6839b9.png) 
 
 # FEATURES AND INTERFACES :desktop_computer:
@@ -27,19 +30,34 @@ TRAV-BUD is a data analytics web app that helps the client to solve their querie
 
 ![image](https://user-images.githubusercontent.com/76087547/170760305-276e6d7f-6ab1-49c9-81c8-75112641a786.png)
 
-## Forecast of the Car Price
+## Car Price Predictor
+
+- Predict the Car Price by writing the paramters given in the form.
+
 ![image](https://user-images.githubusercontent.com/76087547/170762209-a28edb1f-9b3f-433a-8924-ddea865569e9.png)
 
 ## Carbon Emission Predictor
+
+- Predict the Carbon Dioxide Emission by writing the paramters given in the form.
+
 ![image](https://user-images.githubusercontent.com/76087547/170767614-4e08d9cd-7b7b-4eb0-8fba-188af5a74d97.png)
 
-## Lauch Year Prediction of the Vehicle
+## Car Lauch Year Predictor
+
+- Predict the Car Launch Year by writing the paramters given in the form.
+
 ![image](https://user-images.githubusercontent.com/76087547/170767716-7cfaf1e7-1aa3-4fc6-8442-ff1ac5e1d882.png)
 
 ## Km Driven Predictor
+
+- Predict the km's driven by writing the paramters given in the form.
+
 ![image](https://user-images.githubusercontent.com/76087547/170816529-573ee080-a41b-48a4-95ce-cdf7ffe5804f.png)
 
 ### Timeline
+
+- Different challenges that I faced all through these 4 weeks, how I overcame them and what I learnt from those mistakes.
+- 
 ![image](https://user-images.githubusercontent.com/76087547/170762530-98501af2-74cc-4b08-9237-8df61000d726.png)
 
 ## TECH STACK
