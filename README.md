@@ -10,6 +10,8 @@ TRAV-BUD is a data analytics web app that helps the client to solve their querie
 
 ## Dataset Insights -
 
+- The quikr-cars-scraped dataset is an open source dataset with columns like name, company, Price, kms driven, year etc.
+
 
 ## Functional Requirements -
 - Car Price Predictor
