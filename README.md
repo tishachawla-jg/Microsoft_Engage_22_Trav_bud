@@ -75,7 +75,7 @@ TRAV-BUD is a data analytics web app that helps the client to solve their querie
 - Heroku : Deployment
 
 
-## Instructions
+## Instructions to host locally
 1. git clone https://github.com/tishachawla-jg/Microsoft_Engage_22_Trav_bud.git
 
 2. cd ./Microsoft_Engage_22_Trav_bud
