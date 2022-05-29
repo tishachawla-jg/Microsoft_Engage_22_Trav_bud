@@ -1,4 +1,4 @@
-# TRAV-BUD :oncoming_automobile:
+# TRAV-BUD - Data Analysis Track:oncoming_automobile:
 
 TRAV-BUD is a data analytics web app that helps the client to solve their queries with the power of automobile data. Using TRAV-BUD Automotive Industry could harness data to take informed decisions.
 
