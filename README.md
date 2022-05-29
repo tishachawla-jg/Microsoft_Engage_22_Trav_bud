@@ -64,6 +64,7 @@ TRAV-BUD is a data analytics web app that helps the client to solve their querie
 
 ![image](https://user-images.githubusercontent.com/76087547/170762530-98501af2-74cc-4b08-9237-8df61000d726.png)
 
+
 ## TECH STACK
 
 ![image](https://user-images.githubusercontent.com/76087547/170817526-a65ecc73-2f49-4bc3-b1e0-1d8372421b17.png)
@@ -73,12 +74,17 @@ TRAV-BUD is a data analytics web app that helps the client to solve their querie
 - Flask : Machine Learning Web App Integration
 - Heroku : Deployment
 
+
 ## Instructions
 1.git clone https://github.com/tishachawla-jg/Microsoft_Engage_22_Trav_bud.git
+
 2.cd ./Microsoft_Engage_22_Trav_bud
+
 3.Install Flask in the virtual environment : python -m pip install flask
-4. python -m flask run
-5. The app is running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+
+4. Run the flask app using : python -m flask run
+
+6. The app is running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 
 
 ## Need help?
