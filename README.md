@@ -76,11 +76,11 @@ TRAV-BUD is a data analytics web app that helps the client to solve their querie
 
 
 ## Instructions
-1.git clone https://github.com/tishachawla-jg/Microsoft_Engage_22_Trav_bud.git
+1. git clone https://github.com/tishachawla-jg/Microsoft_Engage_22_Trav_bud.git
 
-2.cd ./Microsoft_Engage_22_Trav_bud
+2. cd ./Microsoft_Engage_22_Trav_bud
 
-3.Install Flask in the virtual environment : python -m pip install flask
+3. Install Flask in the virtual environment : python -m pip install flask
 
 4. Run the flask app using : python -m flask run
 
